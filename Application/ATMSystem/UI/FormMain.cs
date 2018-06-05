@@ -327,6 +327,22 @@ namespace UI
                 }
                 state = "listService";
             }
+
+            // state widthdraw
+            else if (state.Equals("widthdraw"))
+            {
+                if (!panelMain.Controls.Contains(ListService.Instance))
+                {
+                    panelMain.Controls.Add(ListService.Instance);
+                    ListService.Instance.Dock = DockStyle.Fill;
+                    ListService.Instance.BringToFront();
+                }
+                else
+                {
+                    ListService.Instance.BringToFront();
+                }
+                state = "listService";
+            }
             
         }
 
