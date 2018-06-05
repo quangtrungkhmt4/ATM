@@ -1,0 +1,7 @@
+E:\BTLWindow\Application\ATMSystem\DAL\bin\Debug\DAL.dll
+E:\BTLWindow\Application\ATMSystem\DAL\bin\Debug\DAL.pdb
+E:\BTLWindow\Application\ATMSystem\DAL\bin\Debug\DTO.dll
+E:\BTLWindow\Application\ATMSystem\DAL\bin\Debug\DTO.pdb
+E:\BTLWindow\Application\ATMSystem\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\BTLWindow\Application\ATMSystem\DAL\obj\Debug\DAL.dll
+E:\BTLWindow\Application\ATMSystem\DAL\obj\Debug\DAL.pdb

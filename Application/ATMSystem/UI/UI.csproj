@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3B09C25-E9AC-4F83-90B5-404E3DB76BEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CashTransfer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CashTransfer.Designer.cs">
+      <DependentUpon>CashTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePIN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangePIN.Designer.cs">
+      <DependentUpon>ChangePIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePINFail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangePINFail.Designer.cs">
+      <DependentUpon>ChangePINFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePINSuccess.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangePINSuccess.Designer.cs">
+      <DependentUpon>ChangePINSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CheckBalance.Designer.cs">
+      <DependentUpon>CheckBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomWidthdraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomWidthdraw.Designer.cs">
+      <DependentUpon>CustomWidthdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Fail.Designer.cs">
+      <DependentUpon>Fail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListService.Designer.cs">
+      <DependentUpon>ListService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Success.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Success.Designer.cs">
+      <DependentUpon>Success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ValidateCard.Designer.cs">
+      <DependentUpon>ValidateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidatePin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ValidatePin.Designer.cs">
+      <DependentUpon>ValidatePin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewHistory.Designer.cs">
+      <DependentUpon>ViewHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Widthdraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Widthdraw.Designer.cs">
+      <DependentUpon>Widthdraw.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CashTransfer.resx">
+      <DependentUpon>CashTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePIN.resx">
+      <DependentUpon>ChangePIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePINFail.resx">
+      <DependentUpon>ChangePINFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePINSuccess.resx">
+      <DependentUpon>ChangePINSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckBalance.resx">
+      <DependentUpon>CheckBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomWidthdraw.resx">
+      <DependentUpon>CustomWidthdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fail.resx">
+      <DependentUpon>Fail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListService.resx">
+      <DependentUpon>ListService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Success.resx">
+      <DependentUpon>Success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidateCard.resx">
+      <DependentUpon>ValidateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidatePin.resx">
+      <DependentUpon>ValidatePin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHistory.resx">
+      <DependentUpon>ViewHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widthdraw.resx">
+      <DependentUpon>Widthdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnArrowRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huyBo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huyBo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dongY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUL\BUL.csproj">
+      <Project>{49c34386-20f4-40b1-9737-2955e1f21355}</Project>
+      <Name>BUL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{7d2bbd33-34ee-4319-b4e8-2f48fe87855c}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{28ba7fc4-577c-4b3b-86f2-66939a59c74d}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rutTien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xemSoDu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doiPIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chuyenKhoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ttgiaodich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\default_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trangtrc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lichsu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\co.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\100k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\200k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1tr5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2tr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khac.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

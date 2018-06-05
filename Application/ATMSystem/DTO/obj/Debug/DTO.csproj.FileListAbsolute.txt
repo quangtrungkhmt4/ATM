@@ -1,0 +1,5 @@
+E:\BTLWindow\Application\ATMSystem\DTO\bin\Debug\DTO.dll
+E:\BTLWindow\Application\ATMSystem\DTO\bin\Debug\DTO.pdb
+E:\BTLWindow\Application\ATMSystem\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+E:\BTLWindow\Application\ATMSystem\DTO\obj\Debug\DTO.dll
+E:\BTLWindow\Application\ATMSystem\DTO\obj\Debug\DTO.pdb
